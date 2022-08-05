@@ -1,0 +1,147 @@
+@use '../utils/'as utils;
+
+
+/* Banner Button */
+.banner__btn {
+    @include utils.row-center;
+    @include utils.open-sans-13;
+    color: utils.$var-black;
+    border-radius: 5px;
+    padding: 0 45px;
+    text-decoration: none;
+    background-color: utils.$var-white;
+    width: 170px;
+    height: 50px;
+    transition: .5s;
+
+    &:hover {
+        box-shadow: utils.$var-btnshadow;
+    }
+}
+
+/* End of Banner Button */
+
+/* interior Button */
+.interior__btn {
+    @include utils.row-center;
+    @include utils.open-sans-13;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 5px;
+    color: utils.$var-white;
+    background-image: utils.$var-btn-bg2;
+    box-shadow: utils.$var-btnshadow2;
+    width: 170px;
+    height: 50px;
+    transition: all 400ms linear;
+    background-size: 200% auto;
+
+    &:hover {
+        background-position: right center;
+        color: #fff;
+    }
+
+}
+
+
+/* End of Interior Button */
+
+
+/* Pricing Button */
+.pricing__btn-center {
+    @include utils.row-center;
+    width: 100%;
+    margin-bottom: 40px;
+
+}
+
+.pricing__btn {
+    @include utils.row-center;
+    @include utils.open-sans-13;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid utils.$var-grey2;
+    background-color: utils.$var-lightgrey;
+    color: utils.$var-black;
+    width: 170px;
+    height: 50px;
+
+    &:hover {
+        background-image: utils.$var-nav-bg;
+        color: utils.$var-white;
+    }
+
+}
+
+/* End of Pricing button */
+
+
+/* App Button */
+.app {
+    &__button {
+        max-width: 220px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: 1px solid utils.$var-white;
+        border-radius: 5px;
+        margin: 0 16px;
+        padding: 12px 30px;
+        transition: .3s;
+
+        /* Responsive  Mobile*/
+    @include utils.mobile{
+        margin: 20px 0;
+        
+    }
+/* End of Responsive Mobile*/
+
+
+        
+
+        &:hover .app__button-title,
+        &:hover .app__button-subtitle {
+            color: utils.$var-black;
+
+        }
+
+        &:hover {
+            background-color: utils.$var-white;
+            box-shadow: utils.$var-btnshadow;
+        }
+
+        &:hover i {
+            background-image: utils.$var-nav-bg;
+            background-clip: text;
+            color: transparent;
+        }
+
+    }
+
+    &__btn {
+        max-width: 100%;
+        padding-right: 22px;
+
+        i {
+            font-size: 42px;
+            color: #fff;
+        }
+    }
+
+    &__button-title {
+        @include utils.open-sans-24;
+        font-weight: 600;
+        color: utils.$var-white;
+        margin-bottom: 5px;
+        cursor: pointer;
+    }
+
+    &__button-subtitle {
+        @include utils.roboto-14;
+        color: utils.$var-white;
+        cursor: pointer;
+    }
+}

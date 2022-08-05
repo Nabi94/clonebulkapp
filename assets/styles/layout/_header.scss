@@ -1,0 +1,81 @@
+@use '../utils/'as utils;
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background: utils.$var-nav-bg;
+    @include utils.row-between;
+
+    /* Responsive  Laptop*/
+    @include utils.laptop {
+        max-width: 1024px;
+    }
+
+    /* End of Responsive Laptop*/
+
+    /* Responsive  Tablet*/
+    @include utils.tablet {
+        max-width: 768;
+        @include utils.column-center;
+        position: static;
+        padding: 50px 0;
+
+    }
+
+    /* End of Responsive Tablet*/
+    /* End of Responsive Tablet*/
+
+
+
+    .container {
+        max-width: 1170px;
+        padding: 0 15px;
+        margin: 0 auto;
+        @include utils.row-between;
+
+
+        /* Responsive  Laptop*/
+        @include utils.laptop {
+            max-width: 1024px;
+        }
+
+        /* End of Responsive Laptop*/
+
+
+
+        /* Responsive  Tablet*/
+        @include utils.tablet {
+            max-width: 768;
+            @include utils.column-center;
+
+        }
+
+        /* End of Responsive Tablet*/
+
+    }
+
+    &__logo {
+        width: 131px;
+
+        /* Responsive  Tablet*/
+        @include utils.tablet {
+            max-width: 768;
+            @include utils.column-center;
+
+        }
+
+        /* End of Responsive Tablet*/
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+    }
+}
+
+/* End of Header */

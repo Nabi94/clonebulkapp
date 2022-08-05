@@ -1,0 +1,232 @@
+@use 'variables' as var;
+@use '../base/' as base;
+
+/* Flex-box */
+
+@mixin row-between{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin row-between2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+@mixin row-around{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+@mixin row-around2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+@mixin row-evenly{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+@mixin row-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+@mixin row-start{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+@mixin flex-col-start{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@mixin flex-row{
+    display: flex;
+    flex-direction: row;
+}
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+}
+@mixin column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin column-wrap{
+    display: flex;
+    flex-flow: column wrap;
+}
+@mixin row-wrap{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+@mixin for-drop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+/* End of Flex-box */
+
+/* Hover */
+@mixin hover-btn{
+    background-position: right center;
+    color: var.$white;
+}
+/* Hover */
+
+/* Font-size */
+/* Roboto */
+@mixin roboto-11{
+    font-family: var.$Roboto;
+    font-size: 11.2px;
+
+}
+@mixin roboto-12{
+    font-family: var.$Roboto;
+    font-size: 12px;
+
+}
+@mixin roboto-14{
+    font-family: var.$Roboto;
+    font-size: 14px;
+
+}
+@mixin roboto-20{
+    font-family: var.$Roboto;
+    font-size: 20px;
+
+}
+@mixin roboto-36{
+    font-family: var.$Roboto;
+    font-size: 36px;
+
+}
+@mixin roboto-48{
+    font-family: var.$Roboto;
+    font-size: 48px;
+
+}
+/* End of Roboto */
+/* Open-Sans */
+@mixin open-sans-12{
+    font-family: var.$OpenSans;
+    font-size: 12px;
+
+}
+@mixin open-sans-13{
+    font-family: var.$OpenSans;
+    font-size: 13px;
+
+}
+@mixin open-sans-14{
+    font-family:var.$OpenSans;
+    font-size: 14px;
+
+}
+@mixin open-sans-16{
+    font-family: var.$OpenSans;
+    font-size: 16px;
+
+}
+@mixin open-sans-18{
+    font-family: var.$OpenSans;
+    font-size: 18px;
+
+}
+@mixin open-sans-20{
+    font-family: var.$OpenSans;
+    font-size: 20px;
+
+}
+@mixin open-sans-24{
+    font-family: var.$OpenSans;
+    font-size: 24px;
+
+}
+@mixin open-sans-25{
+    font-family: var.$OpenSans;
+    font-size: 25px;
+
+}
+@mixin open-sans-28{
+    font-family: var.$OpenSans;
+    font-size: 28px;
+
+}
+
+
+@mixin open-sans-30{
+    font-family: var.$OpenSans;
+    font-size: 30px;
+
+}
+@mixin open-sans-36{
+    font-family: var.$OpenSans;
+    font-size: 36px;
+
+}
+@mixin open-sans-40{
+    font-family: var.$OpenSans;
+    font-size: 40px;
+
+}
+@mixin open-sans-60{
+    font-family: var.$OpenSans;
+    font-size: 60px;
+
+};
+/* End of Opensans */
+
+
+
+
+
+
+/* Breakpoints */
+@mixin laptop{
+    @media screen and (max-width: map-get(var.$breakpoints,"laptop")){
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media screen and (max-width: map-get(var.$breakpoints,"tablet")){
+        @content;
+    }
+}
+@mixin mobile{
+    @media screen and (max-width: map-get(var.$breakpoints,"mobile")){
+        @content;
+    }
+}
+
+@mixin m-mobile{
+    @media screen and (max-width: map-get(var.$breakpoints,"m-mobile")){
+        @content;
+    }
+}
+@mixin s-mobile{
+    @media screen and (max-width: map-get(var.$breakpoints,"s-mobile")){
+        @content;
+    }
+}
+
+/* End of Breakpoints */
+

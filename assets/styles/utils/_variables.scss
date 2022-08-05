@@ -1,0 +1,59 @@
+/* Text Color */
+$white:#fff;/* Button Background Color and another section*/
+$black:#222222;/* Footer Background Color */
+$grey:#777777;
+$ownwhite:#ffffff99;
+$footer:#6247ea;
+$footer-black:#111111;
+/* End of Color */
+
+/* Button Background Color */
+$linear:linear-gradient(0deg, rgba(188, 43, 255, 0.8) 0%, rgba(114, 73, 251, 0.8) 100%);
+/* End of Background Color */
+
+
+/* Background color */
+$grey2:#dddddd;
+$lightgrey:#f9f9f9; /* Card background color and button */
+$bg:linear-gradient(0deg, #bc2bff 0%, #7249fb 100%); /* Navigation background Color and another sections */
+$btn-bg:linear-gradient(0deg, #bc2bff 0%, #7249fb 100%);/* Button Background Color */
+$nav-bg:linear-gradient(94deg, rgba(185,67,254,1) 11%, rgba(162,64,253,1) 37%, rgba(117,72,251,1) 100%);
+$btn-bg2:linear-gradient(to right, #bc2bff 0%, #7249fb 51%, #bc2bff 100%);
+$footer-bg:linear-gradient(0deg,rgba(188,43,255,.8) 0%,rgba(114,73,251,.8) 100%);
+/* End of Background Color */
+
+/* Text Background color */
+
+$textBgColor:gradient(linear, left top, right top, color-stop(0, #bc2bff), color-stop(0.15, #bc2bff), color-stop(0.3, #7249fb), color-stop(0.45, #7249fb), color-stop(0.6, #7249fb), color-stop(0.75, #7249fb), color-stop(0.9, #7249fb), color-stop(1, #7249fb));
+/* End of Text Background Color */
+
+/* Box Shadow */
+$btnshadow:0px 20px 20px 0px rgb(0 0 0 / 10%);
+$cardshadow:0px 10px 30px 0px rgb(0 0 0 / 8%);
+$btnshadow2:0px 10px 30px 0px rgb(115 73 251 / 30%);
+/* End of Box Shadow */
+
+
+
+/* Typography */
+$OpenSans:'OpenSans',sans-serif;
+$Roboto:'Roboto',sans-serif;
+/* End of Typography */
+
+
+
+/* BreakPoints */
+
+$breakpoints:(
+    "laptop":1024px,
+    "tablet":768px,
+    "mobile":480px,
+    "m-mobile":375px,
+    "s-mobile":320px
+)
+
+
+
+
+/* End of Breakpoints */
+

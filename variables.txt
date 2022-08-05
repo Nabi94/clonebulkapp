@@ -1,0 +1,94 @@
+bgcolor linear - linear-gradient(to right,#bc2bff 0%,#7249fb 51%,#bc2bff 100%);
+subtitle color:color: #777;
+title color color: #222;
+button color #fff
+button 13px
+subtitle 14px
+title 36px
+nav 12px opensans
+card-bg-button #f9f9f9;
+bg f9f9f9
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+box-shadow: 0 10px 30px 0rgba(157,157,157,.2);
+background: -webkit-linear-gradient(left, #bb2bff, #7349fb);
+background clip text
+text-fill-color transparent
+
+
+background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #bc2bff), color-stop(0.15, #bc2bff), color-stop(0.3, #7249fb), color-stop(0.45, #7249fb), color-stop(0.6, #7249fb), color-stop(0.75, #7249fb), color-stop(0.9, #7249fb), color-stop(1, #7249fb));
+
+
+11.2,12,14,20,48 roboto
+12,13,14,16,18,20,24,30,36,40,60 opensans
+
+
+
+fonts
+<i class="fa fa-thumb-tack" aria-hidden="true"></i>
+<i class="fa fa-plane" aria-hidden="true"></i>
+<i class="fa fa-globe" aria-hidden="true"></i>
+<i class="fa fa-facebook"></i>
+<i class="fa fa-twitter"></i>
+<i class="fa fa-dribbble"></i>
+<i class="fa fa-behance"></i>
+<i class="fa fa-heart-o" aria-hidden="true"></i>
+
+<i class="fa fa-apple" aria-hidden="true"></i>
+<i class="fa fa-android" aria-hidden="true"></i>
+
+i class="fa fa-eye" aria-hidden="true"></i>
+<i class="fa fa-commenting" aria-hidden="true"></i>
+<i class="fa fa-reply" aria-hidden="true"></i> 
+
+
+
+ /* Responsive  Laptop*/
+    @include utils.laptop{
+        
+    }
+/* End of Responsive Laptop*/
+
+
+
+/* Responsive  Tablet*/
+    @include utils.tablet{
+        
+    }
+/* End of Responsive Tablet*/
+
+
+/* Responsive  Mobile*/
+    @include utils.mobile{
+        
+    }
+/* End of Responsive Mobile*/
+
+
+/* Responsive  Medium Mobile*/
+    @include utils.m-mobile{
+        
+    }
+/* End of Responsive Medium Mobile*/
+
+
+/* Responsive  Small Mobile*/
+    @include utils.s-mobile{
+        
+    }
+/* End of Responsive Small Mobile*/
+
+
+
+
+
+
+
+
+

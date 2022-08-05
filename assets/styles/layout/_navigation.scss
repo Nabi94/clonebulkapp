@@ -1,0 +1,94 @@
+@use '../utils/'as utils;
+
+/* Menu */
+.header {
+    &__nav {
+        margin-left: 310px;
+
+        /* Responsive  Laptop*/
+        @include utils.laptop {
+            margin-left: 120px;
+            width: 100%;
+
+
+        }
+
+        /* End of Responsive Laptop*/
+        @include utils.tablet {
+            width: 100%;
+            margin-left: 0;
+
+        }
+
+    }
+
+    &__nav-list {
+        @include utils.row-between;
+
+        /* Responsive  Tablet*/
+        @include utils.tablet {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        /* End of Responsive Tablet*/
+    }
+
+    &__nav-item {
+        list-style-type: none;
+        padding: 25.9px 0;
+        position: relative;
+        transition: .5s;
+
+        /* Responsive  Tablet*/
+        @include utils.tablet {
+            padding: 10px 0;
+        }
+
+        /* End of Responsive Tablet*/
+
+        &:hover .header__dropdown-list {
+            top: 70px;
+            transition: .5s;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        &:focus .header__dropdown-list {
+            transition: .5s;
+            opacity: 1;
+            visibility: visible;
+            
+        }
+
+    }
+
+    &__nav-link {
+        text-decoration: none;
+        @include utils.open-sans-12;
+        font-weight: 600;
+        color: utils.$var-white;
+        padding: 0 22px;
+        text-transform: uppercase;
+
+
+        /* Responsive  Tablet*/
+        @include utils.tablet{
+        @include utils.open-sans-16;
+
+        
+    }
+/* End of Responsive Tablet*/
+    }
+}
+
+
+.for-table{
+    /* Responsive  Tablet*/
+    @include utils.tablet{
+        text-align: center;
+        
+    }
+/* End of Responsive Tablet*/
+}
