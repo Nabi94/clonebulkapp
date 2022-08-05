@@ -720,7 +720,7 @@ template {
 }
 .footer .container {
   max-width: 1170px;
-  padding: 0 15px;
+  padding: 0 10px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1536,7 +1536,7 @@ template {
 }
 @media screen and (max-width: 375px) {
   .features__content-subtitle {
-    width: 300px;
+    width: 280px;
   }
 }
 .features__cards {
@@ -1580,6 +1580,8 @@ template {
   /* End of Responsive Laptop*/
   /* Responsive  Tablet*/
   /* End of Responsive Tablet*/
+  /* Responsive  Medium Mobile*/
+  /* End of Responsive Medium Mobile*/
 }
 @media screen and (max-width: 1024px) {
   .features__card {
@@ -1592,6 +1594,11 @@ template {
         flex-wrap: no-wrap;
     width: 330px;
     margin: 20px 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .features__card {
+    width: 280px;
   }
 }
 .features__card-pic {
@@ -1882,7 +1889,7 @@ template {
 }
 .pricing .container {
   max-width: 1170px;
-  padding: 0 15px;
+  padding: 0 10px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2012,7 +2019,7 @@ template {
 }
 @media screen and (max-width: 375px) {
   .pricing .card {
-    width: 300px;
+    width: 290px;
   }
 }
 .pricing .card__head {
@@ -2353,6 +2360,7 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 25px 0;
+    width: 300px;
   }
 }
 .testimonials .card:hover {
