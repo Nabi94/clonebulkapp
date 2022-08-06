@@ -1,1 +1,343 @@
-@use '../utils/' as utils;
+@use '../utils/'as utils;
+
+
+/* Contact */
+.contact {
+    margin-top: 70px;
+    width: 100%;
+
+
+
+    /* Responsive  Tablet*/
+    @include utils.tablet {
+        margin-top: 0;
+
+    }
+
+    /* End of Responsive Tablet*/
+
+    /* Banner */
+    &__banner {
+        background-image: utils.$var-footer-bg;
+        width: 100%;
+        height: 400px;
+        padding: 120px 0;
+        @include utils.column-center;
+
+        .container {
+            padding: 0 15px;
+            max-width: 1170px;
+            margin: 0 auto;
+            @include utils.column-center;
+        }
+    }
+
+    &__button{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+
+        /* Responsive  Tablet*/
+    @include utils.tablet{
+        margin-top: 25px;
+        justify-content: center;
+        align-items: center;
+
+        
+    }
+    }
+
+    &__pages {
+        @include utils.row-center;
+
+    }
+
+    &__link {
+        @include utils.roboto-14;
+        color: utils.$var-white;
+        text-decoration: none;
+        text-transform: uppercase;
+        position: relative;
+
+        &:nth-child(1) {
+            margin-right: 32px;
+        }
+
+        &:nth-child(1):after {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 600;
+            font-size: 14px;
+            content: "\f0da";
+            position: absolute;
+            right: -25px;
+        }
+    }
+
+    &__title {
+        @include utils.roboto-48;
+        color: utils.$var-white;
+        font-weight: 500;
+    }
+
+    /* Map */
+
+    &__map {
+        width: 100%;
+        background-color: utils.$var-white;
+        padding: 120px 0;
+
+        .container {
+            max-width: 1170px;
+            padding: 0 15px;
+            margin: 0 auto;
+            position: relative;
+            @include utils.column-center;
+        }
+
+    }
+
+    .google__map {
+        @include utils.row-center;
+        width: 100%;
+        height: 100%;
+
+        iframe {
+            width: 1040px;
+            height: 420px;
+
+            /* Responsive  Laptop*/
+            @include utils.laptop {
+                width: 930px;
+
+            }
+
+            /* End of Responsive Laptop*/
+            /* Responsive  Tablet*/
+            @include utils.tablet {
+                width: 600px;
+
+            }
+
+            /* End of Responsive Tablet*/
+            /* Responsive  Mobile*/
+            @include utils.mobile {
+                width: 300px;
+
+            }
+
+            /* End of Responsive Mobile*/
+        }
+
+
+
+    }
+
+    /* End of Map */
+
+    /* Bottom */
+    &__bottom {
+        width: 100%;
+        padding: 120px 0;
+        background-color: utils.$var-white;
+        display: flex;
+
+        .container {
+            max-width: 1170px;
+            padding: 0 15px;
+            margin: 0 auto;
+            @include utils.flex-column;
+            align-items: baseline;
+
+            /* Responsive  Tablet*/
+            @include utils.tablet {
+                @include utils.column-center;
+
+
+            }
+
+            /* End of Responsive Tablet*/
+
+        }
+
+
+    }
+
+    /* info */
+    &__info {
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px;
+
+    }
+
+    .info {
+        display: flex;
+        flex-direction: row;
+
+        &__icon {
+            font-size: 20px;
+            color: utils.$var-footer;
+            margin-right: 10px;
+
+            i {
+                font-weight: 600;
+            }
+        }
+
+        &__title {
+            @include utils.open-sans-16;
+            color: utils.$var-black;
+            line-height: 24px;
+        }
+
+        &__subtitle {
+            color: utils.$var-grey;
+            @include utils.roboto-14;
+            margin-bottom: 16px;
+            line-height: 24px;
+        }
+    }
+
+    /* End of info */
+
+
+
+
+
+
+
+
+
+
+
+}
+
+.top {
+    @include utils.flex-row;
+    max-width: 1170px;
+    /* Responsive  Tablet*/
+    @include utils.tablet{
+     flex-direction: column;
+     align-items: center;   
+    }  
+
+}
+
+.form {
+    @include utils.flex-row;
+    margin-left: 20px;
+    /* Responsive  Tablet*/
+    @include utils.tablet{
+        flex-direction: column;
+        
+    }
+    /* End of Responsive Tablet*/
+
+    
+/* Responsive  Medium Mobile*/
+@include utils.m-mobile{
+    margin-left:15px;
+        
+}
+/* End of Responsive Medium Mobile*/
+
+
+    &__groups{
+        padding: 0 15px;
+
+
+    }
+    /* Responsive  Small Mobile*/
+    @include utils.s-mobile{
+        padding: 0;
+        
+    }
+
+    &__group {
+        border: 1px solid utils.$var-grey4;
+        margin-bottom: 10px;
+        width: 408px;
+        height: 40px;
+        @include utils.column-center;
+        padding: 6px 12px 0px 20px;
+        /* Responsive  Mobile*/
+    @include utils.mobile{
+        width: 300px;
+    }
+/* End of Responsive Mobile*/
+        input {
+            color: utils.$var-grey3;
+            width: 100%;
+            border: none;
+            outline: none;
+            &::placeholder{
+                @include utils.roboto-12;
+                color: utils.$var-grey3;
+            }
+        }
+    }
+
+    .textarea {
+        border: 1px solid utils.$var-grey4;
+        width: 408px;
+        height: 140px;
+        padding: 6px 12px 0px 20px;
+        /* Responsive  Tablet*/
+    @include utils.tablet{
+       margin:0 auto 
+    }
+    /* End of Responsive Tablet */
+
+    /* Responsive  Mobile*/
+    @include utils.mobile{
+        width: 300px;
+        
+    }
+/* End of Responsive Mobile*/
+        textarea{
+            border: none;
+            resize: none;
+            width: 100%;
+            height: 100%;
+            color: utils.$var-grey3;
+            @include utils.roboto-12;
+            &::placeholder{
+                @include utils.roboto-12;
+                color: utils.$var-grey3;
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* End of Info,Form */
+
+
+
+
+
+
+/* End of Contact */

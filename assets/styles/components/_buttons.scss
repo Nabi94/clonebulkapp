@@ -145,3 +145,31 @@
         cursor: pointer;
     }
 }
+
+
+
+/* Contact Button */
+
+.contact_btn{
+    @include utils.row-center;
+    @include utils.open-sans-13;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 5px;
+    color: utils.$var-white;
+    background-image: utils.$var-btn-bg2;
+    box-shadow: utils.$var-btnshadow2;
+    width: 190px;
+    height: 50px;
+    transition: all 400ms linear;
+    background-size: 200% auto;
+    border: none;
+    outline: none;
+    &:hover {
+        background-position: right center;
+        color: #fff;
+    }
+}
+
+
+/* End of Contact Button */

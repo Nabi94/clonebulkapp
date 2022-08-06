@@ -195,7 +195,9 @@
 
         /* Responsive  Tablet*/
         @include utils.tablet {
-            width: 35%;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
         }
 
         /* End of Responsive Tablet*/
@@ -223,6 +225,17 @@
     &__right-pictures {
         display: flex;
         flex-wrap: wrap;
+
+        
+        /* Responsive  Medium Mobile*/
+    @include utils.m-mobile{
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    
+/* End of Responsive Medium Mobile*/
 
 
 
