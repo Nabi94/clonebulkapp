@@ -92,19 +92,22 @@
         padding: 12px 30px;
         transition: .3s;
 
+
         /* Responsive  Mobile*/
-    @include utils.mobile{
-        margin: 20px 0;
-        
-    }
-/* End of Responsive Mobile*/
+        @include utils.mobile {
+            margin: 20px 0;
+
+        }
+
+        /* End of Responsive Mobile*/
 
 
-        
+
 
         &:hover .app__button-title,
         &:hover .app__button-subtitle {
             color: utils.$var-black;
+
 
         }
 
@@ -150,7 +153,7 @@
 
 /* Contact Button */
 
-.contact_btn{
+.contact_btn {
     @include utils.row-center;
     @include utils.open-sans-13;
     font-weight: 500;
@@ -165,6 +168,8 @@
     background-size: 200% auto;
     border: none;
     outline: none;
+    cursor: pointer;
+
     &:hover {
         background-position: right center;
         color: #fff;
@@ -173,3 +178,1296 @@
 
 
 /* End of Contact Button */
+
+
+
+
+/* Buttons */
+
+.buttons {
+    /* Buttons 0 */
+    &__button0 {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: start;
+        margin-bottom: 40px;
+        /* Responsive  Tablet*/
+    @include utils.tablet{
+        flex-direction: column;
+        
+    }
+/* End of Responsive Tablet*/
+
+        a {
+
+            text-decoration: none;
+            margin: 10px 10px 0 0;
+            padding: 0 30px;
+            font-weight: 500px;
+            line-height: 40px;
+            @include utils.roboto-12;
+
+            &:nth-of-type(1) {
+                color: utils.$var-black;
+                background-color: #f9f9ff;
+                border: 1px solid transparent;
+                transition: 0.3s;
+                &:hover {
+                    border: 1px solid #f9f9ff;
+                    background: #fff;
+                }
+            }
+            &:nth-of-type(2){
+                background-color: utils.$var-primary-btn;
+                color:utils.$var-white;
+                transition: 0.3s;
+                border: 1px solid transparent;
+                &:hover{
+                    border: 1px solid utils.$var-primary-btn;
+                    background-color: utils.$var-white;
+                    color: utils.$var-primary-btn;
+
+                }
+            }
+            &:nth-of-type(3){
+                background-color: utils.$var-success-btn;
+                color:utils.$var-white;
+                transition: 0.3s;
+                border: 1px solid transparent;
+                &:hover{
+                    border: 1px solid utils.$var-success-btn;
+                    background-color: utils.$var-white;
+                    color: utils.$var-success-btn;
+
+                }
+                
+            }
+            &:nth-of-type(4){
+                background-color: utils.$var-info-btn;
+                color:utils.$var-white;
+                transition: 0.3s;
+                border: 1px solid transparent;
+                &:hover{
+                    border: 1px solid utils.$var-info-btn;
+                    background-color: utils.$var-white;
+                    color: utils.$var-info-btn;
+
+                }
+                
+            }
+            &:nth-of-type(5){
+                background-color: utils.$var-warning-btn;
+                color:utils.$var-white;
+                transition: 0.3s;
+                border: 1px solid transparent;
+                &:hover{
+                    border: 1px solid utils.$var-warning-btn;
+                    background-color: utils.$var-white;
+                    color: utils.$var-warning-btn;
+
+                }
+                
+            }
+            &:nth-of-type(6){
+                background-color: utils.$var-danger-btn;
+                color:utils.$var-white;
+                transition: 0.3s;
+                border: 1px solid transparent;
+                &:hover{
+                    border: 1px solid utils.$var-danger-btn;
+                    background-color: utils.$var-white;
+                    color: utils.$var-danger-btn;
+
+                }
+                
+            }
+            &:nth-of-type(7){
+                color: utils.$var-black;
+                background-color: #f9f9ff;
+                border: 1px solid transparent;
+                transition: 0.3s;
+                &:hover {
+                    border: 1px solid #f9f9ff;
+                    background: #fff;
+                }
+                
+            }
+            &:nth-of-type(8){
+                color: utils.$var-disable-btn;
+                background-color: #f9f9ff;
+                border: 1px solid transparent;
+                cursor: not-allowed;
+                
+            }
+
+        }
+    }
+
+    /* End of Buttons 0 */
+
+    /* Buttons 1 */
+
+    &__button1 {
+        display: flex;
+        flex-flow: row nowrap;
+        margin-bottom: 40px;
+        align-items: center;
+        justify-content: start;
+        margin-bottom: 40px;
+        /* Responsive  Tablet*/
+    @include utils.tablet{
+        flex-direction: column;
+        
+    }
+/* End of Responsive Tablet*/
+
+        a {
+
+            text-decoration: none;
+            margin: 10px 10px 0 0;
+            padding: 0 30px;
+            font-weight: 500px;
+            line-height: 40px;
+            @include utils.roboto-12;
+
+            &:nth-of-type(1) {
+                color: utils.$var-disable-btn;
+                background-color:transparent;
+                border: 1px solid transparent;
+                transition: 0.3s;
+                &:hover {
+                    border: 1px solid #f9f9ff;
+                    background: #f9f9ff;
+                    color: utils.$var-black;
+                }
+            }
+            &:nth-of-type(2){
+                background-color: utils.$var-white;
+                color:utils.$var-primary-btn;
+                transition: 0.3s;
+                border: 1px solid utils.$var-primary-btn;
+                &:hover{
+                    border: 1px solid utils.$var-primary-btn;
+                    background-color: utils.$var-primary-btn;
+                    color: utils.$var-white;
+
+                }
+            }
+            &:nth-of-type(3){
+                background-color: utils.$var-white;
+                color:utils.$var-success-btn;
+                transition: 0.3s;
+                border: 1px solid utils.$var-success-btn;
+                &:hover{
+                    border: 1px solid utils.$var-success-btn;
+                    background-color: utils.$var-success-btn;
+                    color: utils.$var-white;
+
+                }
+                
+            }
+            &:nth-of-type(4){
+                background-color: utils.$var-white;
+                color:utils.$var-info-btn;
+                transition: 0.3s;
+                border: 1px solid utils.$var-info-btn;
+                &:hover{
+                    border: 1px solid utils.$var-info-btn;
+                    background-color: utils.$var-info-btn;
+                    color: utils.$var-white;
+
+                }
+                
+            }
+            &:nth-of-type(5){
+                background-color: utils.$var-white;
+                color:utils.$var-warning-btn;
+                transition: 0.3s;
+                border: 1px solid utils.$var-warning-btn;
+                &:hover{
+                    border: 1px solid utils.$var-warning-btn;
+                    background-color: utils.$var-warning-btn;
+                    color: utils.$var-white;
+
+                }
+                
+            }
+            &:nth-of-type(6){
+                background-color: utils.$var-white;
+                color:utils.$var-danger-btn;
+                transition: 0.3s;
+                border: 1px solid utils.$var-danger-btn;
+                &:hover{
+                    border: 1px solid utils.$var-danger-btn;
+                    background-color: utils.$var-danger-btn;
+                    color: utils.$var-white;
+
+                }
+                
+            }
+            &:nth-of-type(7){
+                color: utils.$var-black;
+                background-color: #f9f9ff;
+                border: 1px solid utils.$var-white;
+                transition: 0.3s;
+                &:hover {
+                    border: 1px solid #f9f9ff;
+                    background: #fff;
+                }
+                
+            }
+            &:nth-of-type(8){
+                color: utils.$var-disable-btn;
+                background-color: #f9f9ff;
+                border: 1px solid transparent;
+                cursor: not-allowed;
+                
+            }
+
+        }
+    }
+
+
+    /* End Buttons 1 */
+
+    /* Buttons 2 */
+
+    &__button2 {
+        display: flex;
+        flex-flow: row nowrap;
+        margin-bottom: 40px;
+        align-items: center;
+        justify-content: start;
+        margin-bottom: 40px;
+        /* Responsive  Tablet*/
+    @include utils.tablet{
+        flex-direction: column;
+        
+    }
+/* End of Responsive Tablet*/
+
+        a {
+
+            text-decoration: none;
+            margin: 10px 10px 0 0;
+            padding: 0 30px;
+            font-weight: 500px;
+            line-height: 40px;
+            @include utils.roboto-12;
+
+            &:nth-of-type(1) {
+                color: utils.$var-black;
+                background-color: #f9f9ff;
+                border: 1px solid transparent;
+                border-radius: 3px;
+                transition: 0.3s;
+                &:hover {
+                    border: 1px solid #f9f9ff;
+                    background: #fff;
+                }
+            }
+            &:nth-of-type(2){
+                background-color: utils.$var-primary-btn;
+                color:utils.$var-white;
+                transition: 0.3s;
+                border: 1px solid transparent;
+                border-radius: 3px;
+                &:hover{
+                    border: 1px solid utils.$var-primary-btn;
+                    background-color: utils.$var-white;
+                    color: utils.$var-primary-btn;
+
+                }
+            }
+            &:nth-of-type(3){
+                background-color: utils.$var-success-btn;
+                color:utils.$var-white;
+                transition: 0.3s;
+                border: 1px solid transparent;
+                &:hover{
+                    border: 1px solid utils.$var-success-btn;
+                    background-color: utils.$var-white;
+                    color: utils.$var-success-btn;
+
+                }
+                
+            }
+            &:nth-of-type(4){
+                background-color: utils.$var-info-btn;
+                color:utils.$var-white;
+                transition: 0.3s;
+                border: 1px solid transparent;
+                border-radius: 3px;
+                &:hover{
+                    border: 1px solid utils.$var-info-btn;
+                    background-color: utils.$var-white;
+                    color: utils.$var-info-btn;
+
+                }
+                
+            }
+            &:nth-of-type(5){
+                background-color: utils.$var-warning-btn;
+                color:utils.$var-white;
+                transition: 0.3s;
+                border: 1px solid transparent;
+                border-radius: 3px;
+                &:hover{
+                    border: 1px solid utils.$var-warning-btn;
+                    background-color: utils.$var-white;
+                    color: utils.$var-warning-btn;
+
+                }
+                
+            }
+            &:nth-of-type(6){
+                background-color: utils.$var-danger-btn;
+                color:utils.$var-white;
+                transition: 0.3s;
+                border: 1px solid transparent;
+                border-radius: 3px;
+                &:hover{
+                    border: 1px solid utils.$var-danger-btn;
+                    background-color: utils.$var-white;
+                    color: utils.$var-danger-btn;
+
+                }
+                
+            }
+            &:nth-of-type(7){
+                color: utils.$var-black;
+                background-color: #f9f9ff;
+                border: 1px solid transparent;
+                border-radius: 3px;
+                transition: 0.3s;
+                &:hover {
+                    border: 1px solid #f9f9ff;
+                    background: #fff;
+                }
+                
+            }
+            &:nth-of-type(8){
+                color: utils.$var-disable-btn;
+                background-color: #f9f9ff;
+                border: 1px solid transparent;
+                border-radius: 3px;
+                cursor: not-allowed;
+                
+            }
+
+        }
+    }
+
+    /* End of Buttons 2 */
+
+
+    /* Buttons 3 */
+    &__button3 {
+        display: flex;
+        flex-flow: row nowrap;
+        margin-bottom: 40px;
+        align-items: center;
+        justify-content: start;
+        margin-bottom: 40px;
+        /* Responsive  Tablet*/
+    @include utils.tablet{
+        flex-direction: column;
+        
+    }
+/* End of Responsive Tablet*/
+
+        a {
+
+            text-decoration: none;
+            margin: 10px 10px 0 0;
+            padding: 0 30px;
+            font-weight: 500px;
+            line-height: 40px;
+            @include utils.roboto-12;
+
+            &:nth-of-type(1) {
+                color: utils.$var-disable-btn;
+                background-color:transparent;
+                border: 1px solid transparent;
+                border-radius: 3px;
+                transition: 0.3s;
+                &:hover {
+                    border: 1px solid #f9f9ff;
+                    background: #f9f9ff;
+                    color: utils.$var-black;
+                }
+            }
+            &:nth-of-type(2){
+                background-color: utils.$var-white;
+                color:utils.$var-primary-btn;
+                transition: 0.3s;
+                border: 1px solid utils.$var-primary-btn;
+                border-radius: 3px;
+                &:hover{
+                    border: 1px solid utils.$var-primary-btn;
+                    background-color: utils.$var-primary-btn;
+                    color: utils.$var-white;
+
+                }
+            }
+            &:nth-of-type(3){
+                background-color: utils.$var-white;
+                color:utils.$var-success-btn;
+                transition: 0.3s;
+                border: 1px solid utils.$var-success-btn;
+                border-radius: 3px;
+                &:hover{
+                    border: 1px solid utils.$var-success-btn;
+                    background-color: utils.$var-success-btn;
+                    color: utils.$var-white;
+
+                }
+                
+            }
+            &:nth-of-type(4){
+                background-color: utils.$var-white;
+                color:utils.$var-info-btn;
+                transition: 0.3s;
+                border: 1px solid utils.$var-info-btn;
+                border-radius: 3px;
+                &:hover{
+                    border: 1px solid utils.$var-info-btn;
+                    background-color: utils.$var-info-btn;
+                    color: utils.$var-white;
+
+                }
+                
+            }
+            &:nth-of-type(5){
+                background-color: utils.$var-white;
+                color:utils.$var-warning-btn;
+                transition: 0.3s;
+                border: 1px solid utils.$var-warning-btn;
+                border-radius: 3px;
+                &:hover{
+                    border: 1px solid utils.$var-warning-btn;
+                    background-color: utils.$var-warning-btn;
+                    color: utils.$var-white;
+
+                }
+                
+            }
+            &:nth-of-type(6){
+                background-color: utils.$var-white;
+                color:utils.$var-danger-btn;
+                transition: 0.3s;
+                border: 1px solid utils.$var-danger-btn;
+                border-radius: 3px;
+                &:hover{
+                    border: 1px solid utils.$var-danger-btn;
+                    background-color: utils.$var-danger-btn;
+                    color: utils.$var-white;
+
+                }
+                
+            }
+            &:nth-of-type(7){
+                color: utils.$var-black;
+                background-color: #f9f9ff;
+                border: 1px solid utils.$var-white;
+                border-radius: 3px;
+                transition: 0.3s;
+                &:hover {
+                    border: 1px solid #f9f9ff;
+                    background: #fff;
+                }
+                
+            }
+            &:nth-of-type(8){
+                color: utils.$var-disable-btn;
+                background-color: #f9f9ff;
+                border: 1px solid transparent;
+                border-radius: 3px;
+                cursor: not-allowed;
+                
+            }
+
+        }
+    }
+
+
+
+
+    /* End of Buttons 3 */
+
+
+    /* Buttons 4 */
+
+    &__button4 {
+        display: flex;
+        flex-flow: row nowrap;
+        margin-bottom: 40px;
+        align-items: center;
+        justify-content: start;
+        margin-bottom: 40px;
+        /* Responsive  Tablet*/
+    @include utils.tablet{
+        flex-direction: column;
+        
+    }
+/* End of Responsive Tablet*/
+
+        a {
+
+            text-decoration: none;
+            margin: 10px 10px 0 0;
+            padding: 0 30px;
+            font-weight: 500px;
+            line-height: 40px;
+            @include utils.roboto-12;
+
+            &:nth-of-type(1) {
+                color: utils.$var-black;
+                background-color: #f9f9ff;
+                border: 1px solid transparent;
+                border-radius: 20px;
+                transition: 0.3s;
+                &:hover {
+                    border: 1px solid #f9f9ff;
+                    background: #fff;
+                }
+            }
+            &:nth-of-type(2){
+                background-color: utils.$var-primary-btn;
+                color:utils.$var-white;
+                transition: 0.3s;
+                border: 1px solid transparent;
+                border-radius: 20px;
+                &:hover{
+                    border: 1px solid utils.$var-primary-btn;
+                    background-color: utils.$var-white;
+                    color: utils.$var-primary-btn;
+
+                }
+            }
+            &:nth-of-type(3){
+                background-color: utils.$var-success-btn;
+                color:utils.$var-white;
+                transition: 0.3s;
+                border: 1px solid transparent;
+                border-radius: 20px;
+                &:hover{
+                    border: 1px solid utils.$var-success-btn;
+                    background-color: utils.$var-white;
+                    color: utils.$var-success-btn;
+
+                }
+                
+            }
+            &:nth-of-type(4){
+                background-color: utils.$var-info-btn;
+                color:utils.$var-white;
+                transition: 0.3s;
+                border: 1px solid transparent;
+                border-radius: 20px;
+                &:hover{
+                    border: 1px solid utils.$var-info-btn;
+                    background-color: utils.$var-white;
+                    color: utils.$var-info-btn;
+
+                }
+                
+            }
+            &:nth-of-type(5){
+                background-color: utils.$var-warning-btn;
+                color:utils.$var-white;
+                transition: 0.3s;
+                border: 1px solid transparent;
+                border-radius: 20px;
+                &:hover{
+                    border: 1px solid utils.$var-warning-btn;
+                    background-color: utils.$var-white;
+                    color: utils.$var-warning-btn;
+
+                }
+                
+            }
+            &:nth-of-type(6){
+                background-color: utils.$var-danger-btn;
+                color:utils.$var-white;
+                transition: 0.3s;
+                border: 1px solid transparent;
+                border-radius: 20px;
+                &:hover{
+                    border: 1px solid utils.$var-danger-btn;
+                    background-color: utils.$var-white;
+                    color: utils.$var-danger-btn;
+
+                }
+                
+            }
+            &:nth-of-type(7){
+                color: utils.$var-black;
+                background-color: #f9f9ff;
+                border: 1px solid transparent;
+                border-radius: 20px;
+                transition: 0.3s;
+                &:hover {
+                    border: 1px solid #f9f9ff;
+                    background: #fff;
+                }
+                
+            }
+            &:nth-of-type(8){
+                color: utils.$var-disable-btn;
+                background-color: #f9f9ff;
+                border: 1px solid transparent;
+                border-radius: 20px;
+                cursor: not-allowed;
+                
+            }
+
+        }
+    }
+
+
+
+    /* End of Button 4 */
+
+
+
+
+
+
+    /* Buttons 5 */
+
+
+    &__button5 {
+        display: flex;
+        flex-flow: row nowrap;
+        margin-bottom: 40px;
+        align-items: center;
+        justify-content: start;
+        margin-bottom: 40px;
+        /* Responsive  Tablet*/
+    @include utils.tablet{
+        flex-direction: column;
+        
+    }
+/* End of Responsive Tablet*/
+
+        a {
+
+            text-decoration: none;
+            margin: 10px 10px 0 0;
+            padding: 0 30px;
+            font-weight: 500px;
+            line-height: 40px;
+            @include utils.roboto-12;
+
+            &:nth-of-type(1) {
+                color: utils.$var-disable-btn;
+                background-color:transparent;
+                border: 1px solid transparent;
+                border-radius: 20px;
+                transition: 0.3s;
+                &:hover {
+                    border: 1px solid #f9f9ff;
+                    background: #f9f9ff;
+                    color: utils.$var-black;
+                }
+            }
+            &:nth-of-type(2){
+                background-color: utils.$var-white;
+                color:utils.$var-primary-btn;
+                transition: 0.3s;
+                border: 1px solid utils.$var-primary-btn;
+                border-radius: 20px;
+                &:hover{
+                    border: 1px solid utils.$var-primary-btn;
+                    background-color: utils.$var-primary-btn;
+                    color: utils.$var-white;
+
+                }
+            }
+            &:nth-of-type(3){
+                background-color: utils.$var-white;
+                color:utils.$var-success-btn;
+                transition: 0.3s;
+                border: 1px solid utils.$var-success-btn;
+                border-radius: 20px;
+                &:hover{
+                    border: 1px solid utils.$var-success-btn;
+                    background-color: utils.$var-success-btn;
+                    color: utils.$var-white;
+
+                }
+                
+            }
+            &:nth-of-type(4){
+                background-color: utils.$var-white;
+                color:utils.$var-info-btn;
+                transition: 0.3s;
+                border: 1px solid utils.$var-info-btn;
+                border-radius: 20px;
+                &:hover{
+                    border: 1px solid utils.$var-info-btn;
+                    background-color: utils.$var-info-btn;
+                    color: utils.$var-white;
+
+                }
+                
+            }
+            &:nth-of-type(5){
+                background-color: utils.$var-white;
+                color:utils.$var-warning-btn;
+                transition: 0.3s;
+                border: 1px solid utils.$var-warning-btn;
+                border-radius: 20px;
+                &:hover{
+                    border: 1px solid utils.$var-warning-btn;
+                    background-color: utils.$var-warning-btn;
+                    color: utils.$var-white;
+
+                }
+                
+            }
+            &:nth-of-type(6){
+                background-color: utils.$var-white;
+                color:utils.$var-danger-btn;
+                transition: 0.3s;
+                border: 1px solid utils.$var-danger-btn;
+                border-radius: 20px;
+                &:hover{
+                    border: 1px solid utils.$var-danger-btn;
+                    background-color: utils.$var-danger-btn;
+                    color: utils.$var-white;
+
+                }
+                
+            }
+            &:nth-of-type(7){
+                color: utils.$var-black;
+                background-color: #f9f9ff;
+                border: 1px solid utils.$var-white;
+                border-radius: 20px;
+                transition: 0.3s;
+                &:hover {
+                    border: 1px solid #f9f9ff;
+                    background: #fff;
+                }
+                
+            }
+            &:nth-of-type(8){
+                color: utils.$var-disable-btn;
+                background-color: #f9f9ff;
+                border: 1px solid transparent;
+                border-radius: 20px;
+                cursor: not-allowed;
+                
+            }
+
+        }
+    }
+/* End of Buttons 5 */
+
+
+
+/* Buttons 6 */
+&__button6 {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 40px;
+    /* Responsive  Tablet*/
+@include utils.tablet{
+    flex-direction: column;
+    
+}
+/* End of Responsive Tablet*/
+
+    a {
+
+        text-decoration: none;
+        margin: 10px 10px 0 0;
+        padding: 0 30px;
+        font-weight: 500px;
+        line-height: 40px;
+        @include utils.roboto-12;
+        i{
+            margin-left: 15px;
+            font-size: 12px;
+        }
+
+        &:nth-of-type(1) {
+            color: utils.$var-black;
+            background-color: #f9f9ff;
+            border: 1px solid transparent;
+            border-radius: 20px;
+            transition: 0.3s;
+            &:hover {
+                border: 1px solid #f9f9ff;
+                background: #fff;
+            }
+        }
+        &:nth-of-type(2){
+            background-color: utils.$var-primary-btn;
+            color:utils.$var-white;
+            transition: 0.3s;
+            border: 1px solid transparent;
+            border-radius: 20px;
+            &:hover{
+                border: 1px solid utils.$var-primary-btn;
+                background-color: utils.$var-white;
+                color: utils.$var-primary-btn;
+
+            }
+        }
+        &:nth-of-type(3){
+            background-color: utils.$var-success-btn;
+            color:utils.$var-white;
+            transition: 0.3s;
+            border: 1px solid transparent;
+            border-radius: 20px;
+            &:hover{
+                border: 1px solid utils.$var-success-btn;
+                background-color: utils.$var-white;
+                color: utils.$var-success-btn;
+
+            }
+            
+        }
+        &:nth-of-type(4){
+            background-color: utils.$var-info-btn;
+            color:utils.$var-white;
+            transition: 0.3s;
+            border: 1px solid transparent;
+            border-radius: 20px;
+            &:hover{
+                border: 1px solid utils.$var-info-btn;
+                background-color: utils.$var-white;
+                color: utils.$var-info-btn;
+
+            }
+            
+        }
+        &:nth-of-type(5){
+            background-color: utils.$var-warning-btn;
+            color:utils.$var-white;
+            transition: 0.3s;
+            border: 1px solid transparent;
+            border-radius: 20px;
+            &:hover{
+                border: 1px solid utils.$var-warning-btn;
+                background-color: utils.$var-white;
+                color: utils.$var-warning-btn;
+
+            }
+            
+        }
+        &:nth-of-type(6){
+            background-color: utils.$var-danger-btn;
+            color:utils.$var-white;
+            transition: 0.3s;
+            border: 1px solid transparent;
+            border-radius: 20px;
+            &:hover{
+                border: 1px solid utils.$var-danger-btn;
+                background-color: utils.$var-white;
+                color: utils.$var-danger-btn;
+
+            }
+            
+        }
+        &:nth-of-type(7){
+            color: utils.$var-black;
+            background-color: #f9f9ff;
+            border: 1px solid transparent;
+            border-radius: 20px;
+            transition: 0.3s;
+            &:hover {
+                border: 1px solid #f9f9ff;
+                background: #fff;
+            }
+            
+        }
+        &:nth-of-type(8){
+            color: utils.$var-disable-btn;
+            background-color: #f9f9ff;
+            border: 1px solid transparent;
+            border-radius: 20px;
+            cursor: not-allowed;
+            
+        }
+
+    }
+}
+
+
+
+/* End Buttons 6 */
+
+
+/* Buttons 7 */
+
+&__button7 {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 40px;
+    /* Responsive  Tablet*/
+@include utils.tablet{
+    flex-direction: column;
+    
+}
+/* End of Responsive Tablet*/
+
+    a {
+
+        text-decoration: none;
+        margin: 10px 10px 0 0;
+        padding: 0 30px;
+        font-weight: 500px;
+        line-height: 40px;
+        @include utils.roboto-12;
+        i{
+            margin-left: 15px;
+            font-size: 12px;
+        }
+
+        &:nth-of-type(1) {
+            color: utils.$var-disable-btn;
+            background-color:transparent;
+            border: 1px solid transparent;
+            border-radius: 20px;
+            transition: 0.3s;
+            &:hover {
+                border: 1px solid #f9f9ff;
+                background: #f9f9ff;
+                color: utils.$var-black;
+            }
+        }
+        &:nth-of-type(2){
+            background-color: utils.$var-white;
+            color:utils.$var-primary-btn;
+            transition: 0.3s;
+            border: 1px solid utils.$var-primary-btn;
+            border-radius: 20px;
+            &:hover{
+                border: 1px solid utils.$var-primary-btn;
+                background-color: utils.$var-primary-btn;
+                color: utils.$var-white;
+
+            }
+        }
+        &:nth-of-type(3){
+            background-color: utils.$var-white;
+            color:utils.$var-success-btn;
+            transition: 0.3s;
+            border: 1px solid utils.$var-success-btn;
+            border-radius: 20px;
+            &:hover{
+                border: 1px solid utils.$var-success-btn;
+                background-color: utils.$var-success-btn;
+                color: utils.$var-white;
+
+            }
+            
+        }
+        &:nth-of-type(4){
+            background-color: utils.$var-white;
+            color:utils.$var-info-btn;
+            transition: 0.3s;
+            border: 1px solid utils.$var-info-btn;
+            border-radius: 20px;
+            &:hover{
+                border: 1px solid utils.$var-info-btn;
+                background-color: utils.$var-info-btn;
+                color: utils.$var-white;
+
+            }
+            
+        }
+        &:nth-of-type(5){
+            background-color: utils.$var-white;
+            color:utils.$var-warning-btn;
+            transition: 0.3s;
+            border: 1px solid utils.$var-warning-btn;
+            border-radius: 20px;
+            &:hover{
+                border: 1px solid utils.$var-warning-btn;
+                background-color: utils.$var-warning-btn;
+                color: utils.$var-white;
+
+            }
+            
+        }
+        &:nth-of-type(6){
+            background-color: utils.$var-white;
+            color:utils.$var-danger-btn;
+            transition: 0.3s;
+            border: 1px solid utils.$var-danger-btn;
+            border-radius: 20px;
+            &:hover{
+                border: 1px solid utils.$var-danger-btn;
+                background-color: utils.$var-danger-btn;
+                color: utils.$var-white;
+
+            }
+            
+        }
+        &:nth-of-type(7){
+            color: utils.$var-black;
+            background-color: #f9f9ff;
+            border: 1px solid utils.$var-white;
+            border-radius: 20px;
+            transition: 0.3s;
+            &:hover {
+                border: 1px solid #f9f9ff;
+                background: #fff;
+            }
+            
+        }
+        &:nth-of-type(8){
+            color: utils.$var-disable-btn;
+            background-color: #f9f9ff;
+            border: 1px solid transparent;
+            border-radius: 20px;
+            cursor: not-allowed;
+            
+        }
+
+    }
+}
+
+
+/* End of Buttons 7 */
+
+
+/* Buttons 8 */
+&__button8 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 40px;
+    /* Responsive  Tablet*/
+@include utils.tablet{
+    flex-direction: column;
+    
+}
+/* End of Responsive Tablet*/
+
+    a {
+        text-decoration: none;
+        margin: 10px 10px 0 0;
+        font-weight: 500px;
+        @include utils.roboto-12;
+
+        &:nth-of-type(1) {
+            color: utils.$var-white;
+            background-color: utils.$var-primary-btn;
+            border: 1px solid transparent;
+            transition: 0.3s;
+            line-height: 50px;
+            padding: 0 40px;
+            &:hover {
+                border: 1px solid utils.$var-primary-btn;
+                background: #fff;
+                color: utils.$var-primary-btn;
+            }
+        }
+        &:nth-of-type(2){
+            background-color: utils.$var-success-btn;
+            color:utils.$var-white;
+            transition: 0.3s;
+            border: 1px solid transparent;
+            padding: 0 30px;
+            line-height: 45px;
+            height: 47px;
+            &:hover{
+                border: 1px solid utils.$var-success-btn;
+                background-color: utils.$var-white;
+                color: utils.$var-success-btn;
+
+            }
+        }
+        &:nth-of-type(3){
+            background-color:  utils.$var-primary-btn;
+            color:utils.$var-white;
+            transition: 0.3s;
+            border: 1px solid transparent;
+            padding: 0 30px;
+            line-height: 40px;
+            height: 42px;
+            &:hover{
+                border: 1px solid  utils.$var-primary-btn;
+                background-color: utils.$var-white;
+                color: utils.$var-primary-btn;
+
+            }
+            
+        }
+        &:nth-of-type(4){
+            background-color: utils.$var-success-btn;
+            color:utils.$var-white;
+            transition: 0.3s;
+            border: 1px solid transparent;
+            line-height: 35px;
+            padding: 0 30px;
+            height: 32px;
+            &:hover{
+                border: 1px solid utils.$var-success-btn;
+                background-color: utils.$var-white;
+                color: utils.$var-success-btn;
+
+            }
+            
+        }
+        &:nth-of-type(5){
+            background-color: utils.$var-primary-btn;
+            color:utils.$var-white;
+            transition: 0.3s;
+            border: 1px solid transparent;
+            line-height: 30px;
+            padding: 0 30px;
+            height: 27px;
+            &:hover{
+                border: 1px solid utils.$var-primary-btn;
+                background-color: utils.$var-white;
+                color: utils.$var-warning-btn;
+
+            }
+            
+        }
+    }
+}
+/* End of Button 8 */
+
+/* Buttons 9 */
+
+
+&__button9 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 40px;
+    /* Responsive  Tablet*/
+@include utils.tablet{
+    flex-direction: column;
+    
+}
+/* End of Responsive Tablet*/
+
+    a {
+        text-decoration: none;
+        margin: 10px 10px 0 0;
+        font-weight: 500px;
+        @include utils.roboto-12;
+
+        &:nth-of-type(1) {
+            color: utils.$var-primary-btn;
+            background-color: utils.$var-white;
+            border: 1px solid utils.$var-primary-btn;
+            transition: 0.3s;
+            line-height: 50px;
+            padding: 0 40px;
+            &:hover {
+                border: 1px solid utils.$var-primary-btn;
+                background: utils.$var-primary-btn;
+                color: utils.$var-white;
+            }
+        }
+        &:nth-of-type(2){
+            background-color: utils.$var-white;
+            color:utils.$var-success-btn;
+            transition: 0.3s;
+            border: 1px solid utils.$var-success-btn;
+            padding: 0 30px;
+            line-height: 45px;
+            height: 47px;
+            &:hover{
+                border: 1px solid utils.$var-success-btn;
+                background-color: utils.$var-success-btn;
+                color: utils.$var-white;
+
+            }
+        }
+        &:nth-of-type(3){
+            background-color:  utils.$var-white;
+            color:utils.$var-primary-btn;
+            transition: 0.3s;
+            border: 1px solid utils.$var-primary-btn;
+            padding: 0 30px;
+            line-height: 40px;
+            height: 42px;
+            &:hover{
+                border: 1px solid  utils.$var-primary-btn;
+                background-color: utils.$var-primary-btn;
+                color: utils.$var-white;
+
+            }
+            
+        }
+        &:nth-of-type(4){
+            background-color: utils.$var-white;
+            color:utils.$var-success-btn;
+            transition: 0.3s;
+            border: 1px solid utils.$var-success-btn;
+            line-height: 35px;
+            padding: 0 30px;
+            height: 32px;
+            &:hover{
+                border: 1px solid utils.$var-success-btn;
+                background-color: utils.$var-success-btn;
+                color: utils.$var-white;
+
+            }
+            
+        }
+        &:nth-of-type(5){
+            background-color: utils.$var-white;
+            color:utils.$var-primary-btn;
+            transition: 0.3s;
+            border: 1px solid utils.$var-primary-btn;
+            line-height: 30px;
+            padding: 0 30px;
+            height: 27px;
+            &:hover{
+                border: 1px solid utils.$var-primary-btn;
+                background-color: utils.$var-primary-btn;
+                color: utils.$var-white;
+
+            }
+            
+        }
+    }
+}
+
+
+/* End of Buttons 9 */
+
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* End Buttons */

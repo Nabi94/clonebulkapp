@@ -1,1 +1,342 @@
 @use '../utils/' as utils;
+
+.element__main{
+    width: 100%;
+    margin-top: 70px;
+    /* Responsive  Tablet*/
+    @include utils.tablet {
+        margin-top: 0;
+
+    }
+
+    /* End of Responsive Tablet*/
+}
+
+/* Banner */
+
+.element__banner{
+    width: 100%;
+    background-image: utils.$var-footer-bg;
+    @include utils.column-center;
+    height: 400px;
+    .container{
+        max-width: 1170px;
+        padding: 0 30px;
+        margin: 0 auto;
+        @include utils.column-center;
+    }
+    &-title{
+        @include utils.roboto-48;
+        color: utils.$var-white;
+        font-weight: 500;
+    }
+    &-home{
+        @include utils.roboto-14;
+        color: utils.$var-white;
+        text-decoration: none;
+        text-transform: uppercase;
+        position: relative;
+        margin-right: 32px;
+        &::after{
+            font-family: "Font Awesome 5 Free";
+            font-weight: 600;
+            font-size: 14px;
+            content: "\f0da";
+            position: absolute;
+            right: -25px;
+        }
+        
+    }
+    &-elements{
+        @include utils.roboto-14;
+        color: utils.$var-white;
+        text-decoration: none;
+        text-transform: uppercase;
+
+    }
+
+}
+
+
+/* End of Banner */
+
+
+/* TEXT */
+
+.text{
+    width: 100%;
+    background-color: utils.$var-white;
+    padding: 120px 0;
+    @include utils.column-center;
+    .container{
+        max-width: 1170px;
+        padding: 0 30px;
+        margin: 0 auto;
+        @include utils.column-center;
+        
+    }
+    &__title{
+        @include utils.open-sans-24;
+        margin-bottom: 30px;
+        font-weight: 600;
+
+    }
+
+    &__subtitle{
+        @include utils.roboto-14;
+        line-height: 24px;
+        color: utils.$var-grey;
+
+        b,del,i,u,sub,sup{
+            color: utils.$var-footer;
+        }
+
+    }
+
+
+}
+
+/* End of TEXT */
+
+
+/* Buttons */
+.buttons {
+    width: 100%;
+    background-color: utils.$var-white;
+    padding: 80px 0;
+
+    .container {
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__title{
+        @include utils.open-sans-24;
+        margin-bottom: 30px;
+        font-weight: 500;
+    }
+}
+/* End of Buttons */
+
+
+/* Align */
+.align{
+    width: 100%;
+    background-color: utils.$var-white;
+    padding: 120px 0;
+    .container{
+        max-width: 1170px;
+        padding: 0 30px;
+        margin: 0 auto;
+    }
+
+    /* Left */
+    &__left-content{
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0;
+
+    }
+    &__left-title{
+        @include utils.open-sans-24;
+        margin: 30px 0;
+        font-weight: 600;
+    }
+    
+    &__left-content-inner{
+        display: flex;
+        flex-direction: row;
+        /* Responsive  Mobile*/
+    @include utils.mobile{
+        flex-direction: column;
+        
+    }
+/* End of Responsive Mobile*/
+
+        
+    }
+   
+    &__left-image{
+        padding: 0 15px;
+    }
+    &__left-subtitle{
+        @include utils.roboto-14;
+        font-weight: 500px;
+        line-height: 24px;
+        color: utils.$var-grey;
+        padding: 0 15px;
+
+    }
+
+
+    /* End of Left */
+
+
+    /* Right */
+
+    &__right-content{
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0;
+        
+    }
+
+    &__right-title{
+        @include utils.open-sans-24;
+        margin: 30px 0;
+        font-weight: 600;
+        display: flex;
+        justify-content: end;
+
+    }
+    &__right-content-inner{
+        display: flex;
+        flex-direction: row;
+        /* Responsive  Mobile*/
+    @include utils.mobile{
+        flex-direction: column
+        
+    }
+/* End of Responsive Mobile*/
+
+
+
+        
+    }
+    &__right-subtitle{
+        @include utils.roboto-14;
+        font-weight: 500px;
+        line-height: 24px;
+        color: utils.$var-grey;
+        padding: 0 15px;
+        text-align: right;
+
+    }
+    &__right-image{
+        padding: 0 15px;
+
+        /* Responsive  Mobile*/
+    @include utils.mobile{
+        display: flex;
+        justify-content: end;
+        
+    }
+/* End of Responsive Mobile*/
+
+    }
+
+
+
+
+
+    /* End of Right */
+}
+
+
+/* End of Align */
+
+/* Definition */
+.definition{
+    width: 100%;
+    background-color: utils.$var-white;
+    padding: 120px 0;
+    .container{
+        max-width: 1170px;
+        padding:  0 30px;
+        margin: 0 auto;
+        @include utils.flex-column;
+
+    }
+    &__title{
+        @include utils.open-sans-24;
+        font-weight: 600;
+        margin-bottom: 30px
+    }
+    &__contents{
+        @include utils.flex-row;
+        /* Responsive  Mobile*/
+    @include utils.mobile{
+        @include utils.flex-column;
+        
+    }
+/* End of Responsive Mobile*/
+
+    }
+
+    &__content{
+        padding:15px 0;
+        margin-right: 15px;
+        @include utils.flex-column;
+    }
+    &__content-title{
+        @include utils.open-sans-18;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    &__content-subtitle{
+        margin: 16px 0;
+        color: utils.$var-grey;
+        @include utils.roboto-14;
+        line-height: 24px;
+    }
+}
+
+
+/* End of Definition */
+
+
+/* Block */
+
+.block{
+    width: 100%;
+    padding: 120px 0;
+    background-color: utils.$var-white;
+    .container{
+        max-width: 1170px;
+        padding: 0 30px;
+        margin: 0 auto;
+        @include utils.flex-column;
+    }
+    &__title{
+        @include utils.open-sans-24;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    &__subtitle{
+        border-left: 2px solid utils.$var-primary-btn;
+        p{
+            padding: 30px 50px 30px 30px;
+            @include utils.roboto-14;
+            color: utils.$var-grey;
+            line-height: 24px;
+        }
+    }
+
+}
+
+
+
+/* End of Block */
+
+
+
+
+
+
+/* Line */
+.elements__line{
+    width: 100%;
+    height: 1px;
+    background-color: utils.$var-lightgrey;
+}
+/* End of Line */
+
+
+
+
+
+
+
+
