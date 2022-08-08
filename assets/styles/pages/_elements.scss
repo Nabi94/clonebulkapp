@@ -1,8 +1,9 @@
-@use '../utils/' as utils;
+@use '../utils/'as utils;
 
-.element__main{
+.element__main {
     width: 100%;
     margin-top: 70px;
+
     /* Responsive  Tablet*/
     @include utils.tablet {
         margin-top: 0;
@@ -14,30 +15,34 @@
 
 /* Banner */
 
-.element__banner{
+.element__banner {
     width: 100%;
     background-image: utils.$var-footer-bg;
     @include utils.column-center;
     height: 400px;
-    .container{
+
+    .container {
         max-width: 1170px;
         padding: 0 30px;
         margin: 0 auto;
         @include utils.column-center;
     }
-    &-title{
+
+    &-title {
         @include utils.roboto-48;
         color: utils.$var-white;
         font-weight: 500;
     }
-    &-home{
+
+    &-home {
         @include utils.roboto-14;
         color: utils.$var-white;
         text-decoration: none;
         text-transform: uppercase;
         position: relative;
         margin-right: 32px;
-        &::after{
+
+        &::after {
             font-family: "Font Awesome 5 Free";
             font-weight: 600;
             font-size: 14px;
@@ -45,9 +50,10 @@
             position: absolute;
             right: -25px;
         }
-        
+
     }
-    &-elements{
+
+    &-elements {
         @include utils.roboto-14;
         color: utils.$var-white;
         text-decoration: none;
@@ -63,31 +69,38 @@
 
 /* TEXT */
 
-.text{
+.text {
     width: 100%;
     background-color: utils.$var-white;
     padding: 120px 0;
     @include utils.column-center;
-    .container{
+
+    .container {
         max-width: 1170px;
         padding: 0 30px;
         margin: 0 auto;
         @include utils.column-center;
-        
+
     }
-    &__title{
+
+    &__title {
         @include utils.open-sans-24;
         margin-bottom: 30px;
         font-weight: 600;
 
     }
 
-    &__subtitle{
+    &__subtitle {
         @include utils.roboto-14;
         line-height: 24px;
         color: utils.$var-grey;
 
-        b,del,i,u,sub,sup{
+        b,
+        del,
+        i,
+        u,
+        sub,
+        sup {
             color: utils.$var-footer;
         }
 
@@ -112,56 +125,63 @@
         display: flex;
         flex-direction: column;
     }
-    &__title{
+
+    &__title {
         @include utils.open-sans-24;
         margin-bottom: 30px;
         font-weight: 500;
     }
 }
+
 /* End of Buttons */
 
 
 /* Align */
-.align{
+.align {
     width: 100%;
     background-color: utils.$var-white;
     padding: 120px 0;
-    .container{
+
+    .container {
         max-width: 1170px;
         padding: 0 30px;
         margin: 0 auto;
     }
 
     /* Left */
-    &__left-content{
+    &__left-content {
         display: flex;
         flex-direction: column;
         margin: 50px 0;
 
     }
-    &__left-title{
+
+    &__left-title {
         @include utils.open-sans-24;
         margin: 30px 0;
         font-weight: 600;
     }
-    
-    &__left-content-inner{
+
+    &__left-content-inner {
         display: flex;
         flex-direction: row;
-        /* Responsive  Mobile*/
-    @include utils.mobile{
-        flex-direction: column;
-        
-    }
-/* End of Responsive Mobile*/
 
-        
+        /* Responsive  Mobile*/
+        @include utils.mobile {
+            flex-direction: column;
+
+        }
+
+        /* End of Responsive Mobile*/
+
+
     }
-   
-    &__left-image{
+
+    &__left-image {
         padding: 0 15px;
     }
-    &__left-subtitle{
+
+    &__left-subtitle {
         @include utils.roboto-14;
         font-weight: 500px;
         line-height: 24px;
@@ -176,14 +196,14 @@
 
     /* Right */
 
-    &__right-content{
+    &__right-content {
         display: flex;
         flex-direction: column;
         margin: 50px 0;
-        
+
     }
 
-    &__right-title{
+    &__right-title {
         @include utils.open-sans-24;
         margin: 30px 0;
         font-weight: 600;
@@ -191,21 +211,24 @@
         justify-content: end;
 
     }
-    &__right-content-inner{
+
+    &__right-content-inner {
         display: flex;
         flex-direction: row;
+
         /* Responsive  Mobile*/
-    @include utils.mobile{
-        flex-direction: column
-        
+        @include utils.mobile {
+            flex-direction: column
+        }
+
+        /* End of Responsive Mobile*/
+
+
+
+
     }
-/* End of Responsive Mobile*/
 
-
-
-        
-    }
-    &__right-subtitle{
+    &__right-subtitle {
         @include utils.roboto-14;
         font-weight: 500px;
         line-height: 24px;
@@ -214,16 +237,18 @@
         text-align: right;
 
     }
-    &__right-image{
+
+    &__right-image {
         padding: 0 15px;
 
         /* Responsive  Mobile*/
-    @include utils.mobile{
-        display: flex;
-        justify-content: end;
-        
-    }
-/* End of Responsive Mobile*/
+        @include utils.mobile {
+            display: flex;
+            justify-content: end;
+
+        }
+
+        /* End of Responsive Mobile*/
 
     }
 
@@ -238,44 +263,51 @@
 /* End of Align */
 
 /* Definition */
-.definition{
+.definition {
     width: 100%;
     background-color: utils.$var-white;
     padding: 120px 0;
-    .container{
+
+    .container {
         max-width: 1170px;
-        padding:  0 30px;
+        padding: 0 30px;
         margin: 0 auto;
         @include utils.flex-column;
 
     }
-    &__title{
+
+    &__title {
         @include utils.open-sans-24;
         font-weight: 600;
         margin-bottom: 30px
     }
-    &__contents{
+
+    &__contents {
         @include utils.flex-row;
+
         /* Responsive  Mobile*/
-    @include utils.mobile{
-        @include utils.flex-column;
-        
-    }
-/* End of Responsive Mobile*/
+        @include utils.mobile {
+            @include utils.flex-column;
+
+        }
+
+        /* End of Responsive Mobile*/
 
     }
 
-    &__content{
-        padding:15px 0;
+    &__content {
+        padding: 15px 0;
         margin-right: 15px;
         @include utils.flex-column;
     }
-    &__content-title{
+
+    &__content-title {
         @include utils.open-sans-18;
         font-weight: 600;
         margin-bottom: 20px;
     }
-    &__content-subtitle{
+
+    &__content-subtitle {
         margin: 16px 0;
         color: utils.$var-grey;
         @include utils.roboto-14;
@@ -289,24 +321,28 @@
 
 /* Block */
 
-.block{
+.block {
     width: 100%;
     padding: 120px 0;
     background-color: utils.$var-white;
-    .container{
+
+    .container {
         max-width: 1170px;
         padding: 0 30px;
         margin: 0 auto;
         @include utils.flex-column;
     }
-    &__title{
+
+    &__title {
         @include utils.open-sans-24;
         font-weight: 600;
         margin-bottom: 30px;
     }
-    &__subtitle{
+
+    &__subtitle {
         border-left: 2px solid utils.$var-primary-btn;
-        p{
+
+        p {
             padding: 30px 50px 30px 30px;
             @include utils.roboto-14;
             color: utils.$var-grey;
@@ -321,22 +357,527 @@
 /* End of Block */
 
 
+/* Table */
+.table {
+    width: 100%;
+    background-color: utils.$var-white;
+    padding: 120px 0;
+
+    .container {
+        max-width: 1170px;
+        padding: 0 15px;
+        margin: 0 auto;
+        @include utils.flex-column;
+    }
+
+    &__title {
+        @include utils.open-sans-24;
+        color: utils.$var-black;
+        margin-bottom: 30px;
+        font-weight: 600;
+    }
+
+    table {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        /* Responsive  Mobile*/
+        @include utils.mobile {
+            overflow-x: scroll;
+
+        }
+
+        /* End of Responsive Mobile*/
+
+
+        tr {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            border-bottom: 1px solid utils.$var-grey2;
+
+            /* Responsive  Mobile*/
+            @include utils.mobile {
+                width: 700px;
+
+            }
+
+            /* End of Responsive Mobile*/
+
+
+        }
+
+        td,
+        th {
+            width: 20%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            color: utils.$var-grey;
+            @include utils.roboto-14;
+
+        }
+
+        td {
+            margin-top: 20px;
+        }
+
+
+        img {
+            margin-right: 10px;
+        }
+
+
+
+
+
+    }
+
+    &__percentage1 {
+        background-color: #6382ea;
+        height: 5px;
+        max-width: 262px;
+    }
+
+    &__percentage2 {
+        background-color: #e66686;
+        height: 5px;
+        max-width: 98px;
+    }
+
+    &__percentage3 {
+        background-color: #f09359;
+        height: 5px;
+        max-width: 180px;
+    }
+
+    &__percentage4 {
+        background-color: #73fbaf;
+        height: 5px;
+        max-width: 196px;
+    }
+
+    &__percentage5 {
+        background-color: #73fbaf;
+        height: 5px;
+        max-width: 131px;
+    }
+
+    &__percentage6 {
+        background-color: #6382e6;
+        height: 5px;
+        max-width: 229px;
+    }
+
+    &__percentage7 {
+        background-color: #a367e7;
+        height: 5px;
+        max-width: 98px;
+    }
+
+    &__percentage8 {
+        background-color: #e66686;
+        height: 5px;
+        max-width: 196px;
+    }
+}
+
+
+
+/* End of Table */
+
+
+
+/* Gallery */
+.gallery {
+    width: 100%;
+    padding: 120px 0;
+    background-color: utils.$var-white;
+
+    .container {
+        max-width: 1170px;
+        padding: 0 15px;
+        margin: 0 auto;
+        @include utils.flex-column;
+    }
+
+
+    &__picture {
+        width: 100%;
+        margin: 0 15px;
+
+        &:hover img {
+            opacity: 0.8;
+            transition: .5s;
+
+        }
+
+    }
+
+
+    &__1 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+
+        /* Responsive  Mobile*/
+        @include utils.mobile {
+            flex-direction: column;
+            padding: 0;
+        }
+
+        /* End of Responsive Mobile*/
+
+        img {
+            width: 360px;
+            height: 200px;
+            object-fit: cover;
+
+            /* Responsive  Laptop*/
+            @include utils.laptop {
+                width: 290px;
+
+            }
+
+            /* End of Responsive Laptop*/
+            /* Responsive  Tablet*/
+            @include utils.tablet {
+                width: 210px;
+
+            }
+
+            /* End of Responsive Tablet*/
+            /* Responsive  Mobile*/
+            @include utils.mobile {
+                width: 395px;
+
+            }
+
+            /* End of Responsive Mobile*/
+            /* Responsive  Medium Mobile*/
+            @include utils.m-mobile {
+                width: 345px;
+            }
+
+            /* End of Responsive Medium Mobile*/
+            /* Responsive  Small Mobile*/
+            @include utils.s-mobile {
+                width: 290px;
+
+            }
+
+            /* End of Responsive Small Mobile*/
+        }
+    }
+
+    &__2 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+
+        /* Responsive  Mobile*/
+        @include utils.mobile {
+            flex-direction: column;
+            padding: 0;
+        }
+
+        /* End of Responsive Mobile*/
+        img {
+            width: 555px;
+            height: 200px;
+            object-fit: cover;
+
+            /* Responsive  Laptop*/
+            @include utils.laptop {
+                width: 450px;
+
+            }
+
+            /* End of Responsive Laptop*/
+            /* Responsive  Tablet*/
+            @include utils.tablet {
+                width: 330px;
+
+            }
+
+            /* End of Responsive Tablet*/
+            /* Responsive  Mobile*/
+            @include utils.mobile {
+                width: 395px;
+
+            }
+
+            /* End of Responsive Mobile*/
+            /* Responsive  Medium Mobile*/
+            @include utils.m-mobile {
+                width: 345px;
+            }
+
+            /* End of Responsive Medium Mobile*/
+            /* Responsive  Small Mobile*/
+            @include utils.s-mobile {
+                width: 290px;
+
+            }
+
+            /* End of Responsive Small Mobile*/
+        }
+
+    }
+
+    &__3 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+
+        /* Responsive  Mobile*/
+        @include utils.mobile {
+            flex-direction: column;
+            padding: 0;
+
+        }
+
+        /* End of Responsive Mobile*/
+
+        img {
+            width: 360px;
+            height: 200px;
+            object-fit: cover;
+
+            /* Responsive  Laptop*/
+            @include utils.laptop {
+                width: 290px;
+
+            }
+
+            /* End of Responsive Laptop*/
+
+            /* Responsive  Tablet*/
+            @include utils.tablet {
+                width: 210px;
+
+            }
+
+            /* End of Responsive Tablet*/
+            /* Responsive  Mobile*/
+            @include utils.mobile {
+                width: 395px;
+
+            }
+
+            /* End of Responsive Mobile*/
+            /* Responsive  Medium Mobile*/
+            @include utils.m-mobile {
+                width: 345px;
+            }
+
+            /* End of Responsive Medium Mobile*/
+            /* Responsive  Small Mobile*/
+            @include utils.s-mobile {
+                width: 290px;
+
+            }
+
+            /* End of Responsive Small Mobile*/
+
+        }
+    }
+}
+
+
+
+/* End of Gallery */
+
+
+
+/* Typography */
+
+.typography {
+    width: 100%;
+    padding: 120px 0;
+    background-color: utils.$var-white;
+
+    .container {
+        max-width: 1170px;
+        padding: 0 15px;
+        margin: 0 auto;
+        @include utils.row-between;
+        /* Responsive  Tablet*/
+    @include utils.tablet{
+        @include utils.column-center;
+        
+    }
+/* End of Responsive Tablet*/
+    }
+
+
+
+    /* Header */
+    &__title {
+        @include utils.open-sans-24;
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+
+    &__content {
+        color: utils.$var-grey;
+
+        h1 {
+            margin: 0 0 10px 0;
+            @include utils.open-sans-36;
+            font-weight: 500;
+        }
+
+        h2 {
+            margin: 0 0 10px 0;
+            @include utils.open-sans-30;
+            font-weight: 500;
+        }
+
+        h3 {
+            margin: 0 0 10px 0;
+            @include utils.open-sans-24;
+            font-weight: 500;
+        }
+
+        h4 {
+            margin: 0 0 10px 0;
+            @include utils.open-sans-18;
+            font-weight: 500;
+        }
+
+        h5 {
+            margin: 0 0 10px 0;
+            @include utils.open-sans-16;
+            font-weight: 500;
+        }
+
+        h6 {
+            margin: 0 0 10px 0;
+            @include utils.open-sans-14;
+            font-weight: 500;
+        }
+
+        /* End of Header */
+
+
+        /* Unordered List */
+        ul li {
+            list-style-type: none;
+            position: relative;
+            padding-left: 30px;
+            line-height: 1.82em;
+            @include utils.roboto-14;
+             &::before {
+                content: "";
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                border: 3px solid utils.$var-primary-btn;;
+                background: #fff;
+                top: 4px;
+                left: 0;
+                border-radius: 50%;
+            }
+        }
+
+        /* End of Unordered List */
+
+
+        /* Ordered  List*/
+        ol li{
+            list-style-type: decimal-leading-zero;
+            padding-left: 30px;
+            line-height: 1.82em;
+            @include utils.roboto-14;
+            /* Responsive  Small Mobile*/
+    @include utils.s-mobile{
+        margin: 0 25px;
+        padding-left: 20px;
+    }
+/* End of Responsive Small Mobile*/
+
+            &::marker{
+                color: utils.$var-primary-btn;
+            }
+        }
+
+
+        /* End of Ordered List */
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+/* End of Typograpyh */
+
+
+
+
+
+
 
 
 
 
 /* Line */
-.elements__line{
+.elements__line {
     width: 100%;
     height: 1px;
     background-color: utils.$var-lightgrey;
 }
+
 /* End of Line */
 
+.element__form{
+    width: 100%;
+    padding: 120px 0;
+    background-color: utils.$var-white;
+    .container{
+        max-width: 1170px;
+        padding: 0 15px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        column-gap: 20px;
+        /* Responsive  Tablet*/
+    @include utils.tablet{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+/* End of Responsive Tablet*/
+    }
 
-
-
-
-
-
-
+    
+    
+}
