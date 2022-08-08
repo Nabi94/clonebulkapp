@@ -247,14 +247,15 @@
 
     &__groups{
         padding: 0 15px;
-
-
-    }
-    /* Responsive  Small Mobile*/
+        /* Responsive  Small Mobile*/
     @include utils.s-mobile{
-        padding: 0;
+        padding:0;
         
     }
+
+
+    }
+    
 
     &__group {
         border: 1px solid utils.$var-grey4;
@@ -265,7 +266,7 @@
         padding: 6px 12px 0px 20px;
         /* Responsive  Mobile*/
     @include utils.mobile{
-        width: 300px;
+        width: 260px;
     }
 /* End of Responsive Mobile*/
         input {
@@ -293,7 +294,7 @@
 
     /* Responsive  Mobile*/
     @include utils.mobile{
-        width: 300px;
+        width: 260px;
         
     }
 /* End of Responsive Mobile*/

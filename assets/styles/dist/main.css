@@ -3217,7 +3217,6 @@ template {
   /* End of Responsive Tablet*/
   /* Responsive  Medium Mobile*/
   /* End of Responsive Medium Mobile*/
-  /* Responsive  Small Mobile*/
 }
 @media screen and (max-width: 768px) {
   .form {
@@ -3234,9 +3233,10 @@ template {
 }
 .form__groups {
   padding: 0 15px;
+  /* Responsive  Small Mobile*/
 }
 @media screen and (max-width: 320px) {
-  .form {
+  .form__groups {
     padding: 0;
   }
 }
@@ -3264,7 +3264,7 @@ template {
 }
 @media screen and (max-width: 480px) {
   .form__group {
-    width: 300px;
+    width: 260px;
   }
 }
 .form__group input {
@@ -3315,7 +3315,7 @@ template {
 }
 @media screen and (max-width: 480px) {
   .form .textarea {
-    width: 300px;
+    width: 260px;
   }
 }
 .form .textarea textarea {
@@ -3981,7 +3981,7 @@ template {
 }
 @media screen and (max-width: 320px) {
   .gallery__1 img {
-    width: 290px;
+    width: 260px;
   }
 }
 .gallery__2 {
